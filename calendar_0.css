@@ -179,9 +179,7 @@
 ::-moz-selection {
     background: rgba(127, 255, 255, 0.4);
 }
-.pi {
-    display: none;
-}
+
 .d {
     position: absolute;
     transform-origin: 0 100%;
