@@ -1,0 +1,11 @@
+.single_date {
+    font-family: ff1;
+    line-height: 0.7545;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+
+    font-size: 32px;
+    color: rgb(0, 88, 216);
+    letter-spacing: 0px;
+}
