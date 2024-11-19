@@ -51,30 +51,6 @@
         right: 0;
     }
 }
-@media print {
-    @page {
-        margin: 0;
-    }
-    html {
-        margin: 0;
-    }
-    body {
-        margin: 0;
-        -webkit-print-color-adjust: exact;
-    }
-    #sidebar {
-        display: none;
-    }
-    #page-container {
-        width: auto;
-        height: auto;
-        overflow: visible;
-        background-color: transparent;
-    }
-    .d {
-        display: none;
-    }
-}
 .pf {
     position: relative;
     background-color: white;
@@ -122,23 +98,7 @@
     -webkit-user-select: none;
     user-select: none;
 }
-@media print {
-    .pf {
-        margin: 0;
-        box-shadow: none;
-        page-break-after: always;
-        page-break-inside: avoid;
-    }
-    @-moz-document url-prefix() {
-        .pf {
-            overflow: visible;
-            border: 1px solid #fff;
-        }
-        .pc {
-            overflow: visible;
-        }
-    }
-}
+
 .c {
     position: absolute;
     border: 0;
