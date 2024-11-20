@@ -25,3 +25,7 @@
 .dis-c {
     display: contents;
 }
+
+body {
+    background-color:#f2f2e2;
+}

@@ -3,54 +3,7 @@
      * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
      * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE
      */
-#sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-}
-#page-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-@media screen {
-    #sidebar.opened + #page-container {
-        left: 250px;
-    }
-    #page-container {
-        bottom: 0;
-        right: 0;
-        overflow: auto;
-    }
-    .loading-indicator {
-        display: none;
-    }
-    .loading-indicator.active {
-        display: block;
-        position: absolute;
-        width: 64px;
-        height: 64px;
-        top: 50%;
-        left: 50%;
-        margin-top: -32px;
-        margin-left: -32px;
-    }
-    .loading-indicator img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
-}
+
 .pf {
     position: relative;
     background-color: white;
@@ -73,9 +26,7 @@
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
 }
-.pc.opened {
-    display: block;
-}
+
 .bf {
     position: absolute;
     border: 0;
@@ -138,18 +89,4 @@
 }
 ::-moz-selection {
     background: rgba(127, 255, 255, 0.4);
-}
-
-.d {
-    position: absolute;
-    transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -webkit-transform-origin: 0 100%;
-}
-.it {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0);
-}
-.ir:hover {
-    cursor: pointer;
 }

@@ -1,8 +1,12 @@
 
 const DAY = 1000 * 60 * 60 * 24;
 const WEEKDAYS = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
+const IMG_WIDTH = 596 + 16
+const IMG_HEIGHT = 842.5 + 16
 
 window.onload = async () => {
+    resize();
+
 
     if (new Date().getFullYear() !== 2025) {
         await loopingThroughDays();
@@ -25,6 +29,20 @@ window.onload = async () => {
         }
     }, 1000);
 
+}
+
+window.onresize = () => resize()
+
+function resize() {
+    {
+        const windowRatio = window.innerWidth / window.innerHeight;
+        const imgRatio = IMG_WIDTH / IMG_HEIGHT;
+
+        document.body.style.zoom = windowRatio > imgRatio
+            ? window.innerHeight / IMG_HEIGHT
+            : window.innerWidth / IMG_WIDTH;
+
+    }
 }
 
 async function loopingThroughDays() {
