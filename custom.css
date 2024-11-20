@@ -9,3 +9,19 @@
     color: rgb(0, 88, 216);
     letter-spacing: 0px;
 }
+
+.current_date::after {
+    position: absolute;
+    content: attr(data-label);
+    color: white;
+    background: rgb(0, 88, 216);
+    padding: 40px;
+    font-size: 66px;
+    top:-50px;
+    left: -50px;
+    z-index: 2
+}
+
+.dis-c {
+    display: contents;
+}
