@@ -52,7 +52,7 @@ async function loopingThroughDays() {
         for (const [_, { month, label }] of Object.entries(dayLabels)) {
             const matchingDay = getDateFromMonthAndLabel(month, label);
             attachClassToElement(matchingDay, 'current_date', label)
-            await wait(20);
+            await wait(50);
             removeClassFromElement(matchingDay, 'current_date');
         }
     }

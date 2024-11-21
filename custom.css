@@ -15,11 +15,10 @@
     content: attr(data-label);
     color: white;
     background: rgb(0, 88, 216);
-    padding: 40px;
-    font-size: 66px;
-    top:-50px;
-    left: -50px;
-    z-index: 2
+    padding: 10px;
+    top: -10px;
+    left: -10px;
+    z-index: 2;
 }
 
 .dis-c {
@@ -27,7 +26,7 @@
 }
 
 body {
-    background-color:#f2f2e2;
+    background-color: #f2f2e2;
 }
 
 .new-year-coming {
@@ -37,9 +36,5 @@ body {
     color: white;
     background: rgb(0, 88, 216);
     padding: 12px;
-    font-size: 20px;
-    top: 22%;
-    left: 12%;
     z-index: 2;
-    z-index: 2
 }
