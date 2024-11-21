@@ -59,7 +59,7 @@ async function loopingThroughDays() {
 }
 
 function getEveryDayOfTheYear(year = 2025) {
-    const day1 = new Date(`01-01-${year}`).getTime();
+    const day1 = new Date(`${year}-01-01`).getTime();
 
     const result = {}
 
